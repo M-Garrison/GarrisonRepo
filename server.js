@@ -46,6 +46,17 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 
 //___________________
 // Routes
+
+app.get('/fantasy/new', (req, res) => {
+  res.render('new.ejs')
+});
+
+
+
+
+
+
+
 //___________________
 //localhost:3000
 app.get('/' , (req, res) => {
