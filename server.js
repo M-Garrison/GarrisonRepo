@@ -51,7 +51,9 @@ app.get('/fantasy/new', (req, res) => {
   res.render('new.ejs')
 });
 
-
+app.post('/fantasy', (req, res) => {
+  res.send('received')
+});
 
 
 
