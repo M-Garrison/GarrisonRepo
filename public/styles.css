@@ -2,12 +2,22 @@ body{
     background-color: lavender;
     text-align: center;
 }
+header{
+    background-color: turquoise;
+    text-align: center;
+}
+.img-class{
+    max-width: 40%;
+}
+.img-class:hover{
+    color: blue;
+    cursor: pointer;
+    box-shadow: 10px 10px blue;
+}
+
 nav{
     background-color: turquoise;
     text-align: center;
 }
 
-header{
-    background-color: turquoise;
-    text-align: center;
-}
+

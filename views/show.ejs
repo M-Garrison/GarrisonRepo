@@ -9,14 +9,14 @@
         <header>
         <h1>MEME SHOW PAGE</h1></header>
         <img src="<%=bango.meme %>"><p>
-        Meme explanation: <p>
+        <h3>Meme explanation: <p>
         <%=bango.explain; %><p>
         Meme provided by <%=bango.name; %>,
         <% if(bango.motherKnow === true){ %>
             and they believe their Mother would understand this Meme.
         <% } else { %>
             and they believe their Mother would NOT understand this Meme.
-        <% } %>
+        <% } %></h3>
     </body>
     <nav>
         <a href="/fantasy"><button type="button" style="width: 150px;">RETURN TO MEME INDEX</button></a>

@@ -9,7 +9,7 @@
         <header>
         <h1>MEME EDIT PAGE</h1></header>
         <form action="/fantasy/<%=bongo.id%>?_method=PUT" method="POST">
-            <img src="<%=bongo.meme%>"><br/>
+            <img src="<%=bongo.meme%>"><br/><h3>
             Meme provided by: <input type="text" name="name" value="<%=bongo.name%>"/><br/>
             Update Meme (edit direct link here): <input type="text" name="meme" value="<%=bongo.meme%>"/><br/>
             Update Meme explanation: <input type="text" name="explain" value="<%=bongo.explain%>"/><br/>
@@ -21,8 +21,8 @@
                     checked
                 <% } %>
                 />       
-            <br/>
-            <input type="submit" value="SUBMIT CHANGES">
+            <br/></h3>
+            <input type="submit" value="SUBMIT CHANGES"><p>
         </form>
         <nav>
             <a href="/fantasy"><button type="button" style="width: 150px;">RETURN TO MEME INDEX</button></a>
