@@ -1,22 +1,24 @@
 body{
-    background-color: lavender;
+    background-color: rgb(150, 220, 156);
     text-align: center;
 }
 header{
-    background-color: turquoise;
+    background-color: GREEN;
     text-align: center;
 }
-.img-class{
+.img-class1{
     max-width: 40%;
 }
-.img-class:hover{
+.img-class1:hover{
     color: blue;
     cursor: pointer;
-    box-shadow: 10px 10px blue;
+    box-shadow: 20px 20px GREEN;
 }
-
+.img-class2{
+    max-width: 40%;
+}
 nav{
-    background-color: turquoise;
+    background-color: GREEN;
     text-align: center;
 }
 
