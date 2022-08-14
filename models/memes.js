@@ -4,7 +4,7 @@ const memeSchema = new mongoose.Schema({
     name: { type: String, required: true },
     meme: { type: String, required: true },
     motherKnow: Boolean,
-    explain: { type: String}
+    explain: { type: String }
 });
 
 const Meme = mongoose.model('Comic', memeSchema);

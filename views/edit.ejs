@@ -8,8 +8,9 @@
         <h1>Meme Edit Page</h1>
         <form action="/fantasy/<%=bongo.id%>?_method=PUT" method="POST">
             Name: <input type="text" name="name" value="<%=bongo.name%>"/><br/>
-            Meme: <input type="text" name="meme" value="<%=bongo.meme%>"/><br/>
-            Mother would understand: 
+            <img src="<%=bongo.meme%>"><p>
+            Meme (direct link): <input type="text" name="meme" value="<%=bongo.meme%>"/><br/>
+            Check here if you think your Mother would understand this Meme:
             <input 
                 type="checkbox" 
                 name="motherKnow" 
