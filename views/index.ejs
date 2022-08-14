@@ -10,13 +10,14 @@
             <% for(let i=0; i < bingo.length; i++){ %>
                 <li>
                     <a href="/fantasy/<%=bingo[i].id%>">
-                        <%=bingo[i].name%>
-                    </a>
+                        <h2><%=bingo[i].name%></h2>
+                    </a><p>
+                    <a href="/fantasy/<%=bingo[i].id%>/edit"><h5>EDIT</h5></a>
                 </li>
             <% } %>
         </ul>
         <nav>
-            <a href="/fantasy/new">Add New Meme</a>
+            <a href="/fantasy/new"><h2>Add New Meme</h2></a>
         </nav>
     </body>
 </html>
