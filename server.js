@@ -46,10 +46,17 @@ app.use(express.json());// returns middleware that only parses JSON - may or may
 //use method override
 app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 
+//___________________
+// MY 7 ROUTES:
+//___________________
 
 //___________________
-// 7 ROUTES:
-//___________________
+// DELETE ROUTE
+app.delete('/fantasy/:id', (req, res)=>{
+  Meme.findByIdAndRemove(req.params.id, (error, data) => {
+      res.redirect('/fantasy');
+  })
+})
 
 //___________________
 // EDIT ROUTE
@@ -81,7 +88,7 @@ app.get('/fantasy/:id', (req, res) => {
 }); 
 
 //___________________
-// PUT ROUTE
+// UPDATE ROUTE
 app.put('/fantasy/:id', (req, res)=>{
   if(req.body.motherKnow === 'on'){
       req.body.motherKnow = true;
@@ -92,7 +99,6 @@ app.put('/fantasy/:id', (req, res)=>{
     res.redirect('/fantasy')
   })
 });
-
 
 //___________________
 // CREATE ROUTE
@@ -105,7 +111,6 @@ app.post('/fantasy', (req, res) => {
   Meme.create(req.body, (error, createdMeme) => {
     res.redirect('/fantasy')
   })
-  // res.send(req.body); 
 });
 
 //___________________
@@ -120,7 +125,6 @@ app.get('/fantasy', (req, res) => {
     )
   })
 });
-
 
 //___________________
 //localhost:3000
