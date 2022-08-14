@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+<link rel="stylesheet" href="/styles.css">
     <head>
         <meta charset="utf-8">
-        <title>Meme Index Page</title>
+        <title>MEME INDEX PAGE</title>
     </head>
     <body>
-        <h1>Meme Index Page</h1>
-        <ul>
+        <header>
+        <h1>MEME INDEX PAGE</h1>
+        <h3>(Click on Meme for more details)</h3>
+        </header>
             <% for(let i=0; i < bingo.length; i++){ %>
                 <ul>
+                    Meme #<%= [i+1]%>:<p>
                     <a href="/fantasy/<%=bingo[i].id%>">
-                        <h2><img src="<%=bingo[i].meme %>"></h2>
-                    </a><p>
-                    <a href="/fantasy/<%=bingo[i].id%>/edit"><h4>EDIT</h4></a>
+                    <img src="<%=bingo[i].meme %>"></a><p>
+
+                        
+                    <a href="/fantasy/<%=bingo[i].id%>/edit"><button type="button" style="width: 150px;">EDIT</button></a>
                     <form action="/fantasy/<%=bingo[i].id; %>?_method=DELETE" method="POST">
-                        <input type="submit" value="DELETE"/>
+                        <input type="submit" value="DELETE" style="width: 150px;"/>
                     </form>
                 </ul>
             <% } %>
-        </ul>
-        <nav id="nav">
-            <a href="/fantasy/new"><h2>Add New Meme</h2></a>
+        <nav>
+            <a href="/fantasy/new"><button type="button" style="width: 150px;">ADD NEW MEME</button></a>
         </nav>
     </body>
 </html>

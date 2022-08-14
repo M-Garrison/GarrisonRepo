@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+<link rel="stylesheet" href="/styles.css">    
     <head>
         <meta charset="utf-8">
         <title></title>
     </head>
     <body>
-        <h1>Meme Edit Page</h1>
+        <header>
+        <h1>MEME EDIT PAGE</h1></header>
         <form action="/fantasy/<%=bongo.id%>?_method=PUT" method="POST">
-            Name: <input type="text" name="name" value="<%=bongo.name%>"/><br/>
-            <img src="<%=bongo.meme%>"><p>
-            Meme (direct link): <input type="text" name="meme" value="<%=bongo.meme%>"/><br/>
-            Check here if you think your Mother would understand this Meme:
+            <img src="<%=bongo.meme%>"><br/>
+            Meme provided by: <input type="text" name="name" value="<%=bongo.name%>"/><br/>
+            Update Meme (edit direct link here): <input type="text" name="meme" value="<%=bongo.meme%>"/><br/>
+            Update Meme explanation: <input type="text" name="explain" value="<%=bongo.explain%>"/><br/>
+            Check this box if you think your Mother would understand this Meme:
             <input 
                 type="checkbox" 
                 name="motherKnow" 
@@ -19,11 +22,10 @@
                 <% } %>
                 />       
             <br/>
-            Meme explanation: <input type="text" name="explain" value="<%=bongo.explain%>"/><br/>
-            <input type="submit" value="submit changes">
+            <input type="submit" value="SUBMIT CHANGES">
         </form>
         <nav>
-            <a href="/fantasy">Back to Meme Index</a>
+            <a href="/fantasy"><button type="button" style="width: 150px;">RETURN TO MEME INDEX</button></a>
         </nav>
     </body>
 </html>

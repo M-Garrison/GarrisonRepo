@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+<link rel="stylesheet" href="/styles.css">
     <head>
         <meta charset="utf-8">
         <title>New Meme Entry Page</title>
     </head>
     <body>
-        <h1>Meme Show Page</h1>
-        The Meme: <p>
+        <header>
+        <h1>MEME SHOW PAGE</h1></header>
         <img src="<%=bango.meme %>"><p>
-        The explanation: <p>
+        Meme explanation: <p>
         <%=bango.explain; %><p>
-        <%=bango.name; %>
+        Meme provided by <%=bango.name; %>,
         <% if(bango.motherKnow === true){ %>
-            believes their Mother would understand this Meme.
+            and they believe their Mother would understand this Meme.
         <% } else { %>
-            believes their Mother would NOT understand this Meme.
+            and they believe their Mother would NOT understand this Meme.
         <% } %>
     </body>
     <nav>
-        <a href="/fantasy">Back to Meme Index</a>
+        <a href="/fantasy"><button type="button" style="width: 150px;">RETURN TO MEME INDEX</button></a>
     </nav>
 </html>
