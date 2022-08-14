@@ -54,7 +54,12 @@ app.get('/fantasy/new', (req, res) => {
 
 app.get('/fantasy/:id', (req, res) => {
   Meme.findById(req.params.id, (error, foundMeme) => {
-    res.send(foundMeme)
+    res.render(
+      'show.ejs',
+      {
+        bango: foundMeme
+      }
+    )
   })
 }); 
 

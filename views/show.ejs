@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>New Meme Entry Page</title>
+    </head>
+    <body>
+        <h1>Meme Show Page</h1>
+        The Meme: <p>
+        <%=bango.meme; %> <p>
+        The explanation: <p>
+        <%=bango.explain; %><p>
+        <%=bango.name; %>
+        <% if(bango.motherKnow === true){ %>
+            believes their Mother would understand this Meme.
+        <% } else { %>
+            believes their Mother would NOT understand this Meme.
+        <% } %>
+    </body>
+    <nav>
+        <a href="/fantasy">Back to Meme Index</a>
+    </nav>
+</html>

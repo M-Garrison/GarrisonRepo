@@ -10,15 +10,3 @@ const memeSchema = new mongoose.Schema({
 const Meme = mongoose.model('Comic', memeSchema);
 
 module.exports = Meme; 
-
-
-
-
-
-
-// Name: <input type="text" name="name" /></br>
-// Meme: <input type="text" name="meme" /></br>
-// Check here if your Mother would understand this Meme (if she saw it): <input type="checkbox" name="motherKnow" /><br/>
-// Meme explanation: <input type="text" name="explain" /></br>
-// <input type="submit" value="Submit Meme">
-// </form>
