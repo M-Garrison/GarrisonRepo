@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 <link rel="stylesheet" href="/styles.css">    
     <head>
         <meta charset="utf-8">
@@ -10,9 +14,9 @@
         <h1>MEME EDIT PAGE</h1></header>
         <form action="/fantasy/<%=bongo.id%>?_method=PUT" method="POST">
             <img src="<%=bongo.meme%>" class="img-class2"><br/><h3>
-            Meme provided by: <input type="text" name="name" value="<%=bongo.name%>"/><br/>
-            Update Meme (edit direct link here): <input type="text" name="meme" value="<%=bongo.meme%>"/><br/>
-            Update Meme explanation: <input type="text" name="explain" value="<%=bongo.explain%>"/><br/>
+            Meme provided by: <input type="text" name="name" class="blank" value="<%=bongo.name%>"/><br/>
+            Update Meme (edit direct link here): <input type="text" name="meme" class="blank" value="<%=bongo.meme%>"/><br/>
+            Update Meme explanation: <input type="text" name="explain" class="blank" value="<%=bongo.explain%>"/><br/>
             Check this box if you think your Mother would understand this Meme:
             <input 
                 type="checkbox" 
@@ -22,10 +26,10 @@
                 <% } %>
                 />       
             <br/></h3>
-            <input type="submit" value="SUBMIT CHANGES"><p>
+            <input type="submit" class="btn btn-primary" value="SUBMIT CHANGES"><p>
         </form>
         <nav>
-            <a href="/fantasy"><button type="button" style="width: 150px;">RETURN TO MEME INDEX</button></a>
+            <a href="/fantasy"><button type="button" class="btn btn-primary btn-lg">RETURN TO MEME INDEX</button></a>
         </nav>
     </body>
 </html>

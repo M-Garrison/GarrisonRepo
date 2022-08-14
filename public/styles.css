@@ -1,13 +1,23 @@
 body{
     background-color: rgb(150, 220, 156);
     text-align: center;
+    max-width: 80%;
+    margin: auto;
 }
 header{
-    background-color: GREEN;
+    color: blue;
+    background-color: green;
     text-align: center;
+    font-family: 'Press Start 2P', cursive;
 }
+.retro{
+    font-family: 'Press Start 2P', cursive;
+}
+
 .img-class1{
-    max-width: 40%;
+    min-width: 25%;
+    max-width: 50%;
+    /* padding-bottom: 5em; */
 }
 .img-class1:hover{
     color: blue;
@@ -15,11 +25,38 @@ header{
     box-shadow: 20px 20px GREEN;
 }
 .img-class2{
-    max-width: 40%;
+    min-width: 25%;
+    max-width: 50%;
 }
 nav{
     background-color: GREEN;
     text-align: center;
 }
-
-
+.button{
+    width: 250px;
+    /* padding-top: 1em; */
+}
+.blank{
+    width: 450px;
+}
+.bigButton{
+    padding-top: 2em;
+    width: 250px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    min-width: 25%;
+    max-width: 50%;
+    margin: auto;
+    border: solid black 2px;
+}
+.second{
+    border: solid black 2px;
+}
+.pre{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    border: solid black 2px;
+}
