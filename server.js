@@ -3,7 +3,9 @@
 //___________________
 const express = require('express');
 const methodOverride  = require('method-override');
+const { GridFSBucketWriteStream } = require('mongodb');
 const mongoose = require ('mongoose');
+const Meme = require('./models/memes.js');
 const app = express ();
 const db = mongoose.connection;
 require('dotenv').config()
@@ -56,9 +58,15 @@ app.post('/fantasy', (req, res) => {
   } else { 
     req.body.motherKnow = false;
   }
-  res.send(req.body); 
+  Meme.create(req.body, (error, createdMeme) => {
+    res.send(createdMeme)
+  })
+  // res.send(req.body); 
 });
 
+app.get('/fantasy', (req, res) => {
+  res.render('index.ejs')
+});
 
 
 
