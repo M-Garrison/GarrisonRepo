@@ -52,6 +52,12 @@ app.get('/fantasy/new', (req, res) => {
   res.render('new.ejs')
 });
 
+app.get('/fantasy/:id', (req, res) => {
+  Meme.findById(req.params.id, (error, foundMeme) => {
+    res.send(foundMeme)
+  })
+}); 
+
 app.post('/fantasy', (req, res) => {
   if(req.body.motherKnow === "on"){
     req.body.motherKnow = true;
@@ -59,13 +65,20 @@ app.post('/fantasy', (req, res) => {
     req.body.motherKnow = false;
   }
   Meme.create(req.body, (error, createdMeme) => {
-    res.send(createdMeme)
+    res.redirect('/fantasy')
   })
   // res.send(req.body); 
 });
 
 app.get('/fantasy', (req, res) => {
-  res.render('index.ejs')
+  Meme.find({}, (error, allMemes) => {
+    res.render(
+      'index.ejs',
+      {
+        bingo: allMemes
+      }
+    )
+  })
 });
 
 

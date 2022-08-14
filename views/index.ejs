@@ -6,7 +6,17 @@
     </head>
     <body>
         <h1>Meme Index Page</h1>
+        <ul>
+            <% for(let i=0; i < bingo.length; i++){ %>
+                <li>
+                    <a href="/fantasy/<%=bingo[i].id%>">
+                        <%=bingo[i].name%>
+                    </a>
+                </li>
+            <% } %>
+        </ul>
+        <nav>
+            <a href="/fantasy/new">Add New Meme</a>
+        </nav>
     </body>
-    <nav>
-    </nav>
 </html>
