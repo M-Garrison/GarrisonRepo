@@ -9,6 +9,8 @@ header{
     color: #0B0A07;
     background-color: #32E875;
     text-align: center;
+    border: solid black 5px;
+    height: 8em;
 }
 .img-class1{
     min-width: 25%;
@@ -17,7 +19,7 @@ header{
 .img-class1:hover{
     color: #0B0A07;
     cursor: pointer;
-    box-shadow: 20px 20px #32E875;
+    box-shadow: 20px 20px #2708A0;
 }
 .img-class2{
     min-width: 25%;
@@ -26,12 +28,14 @@ header{
 nav{
     background-color: #32E875;
     text-align: center;
+    border: solid black 5px;
+    height: 8em;
 }
-.button{
-    width: 250px;
+.name{
+    width: 300px;
 }
 .blank{
-    width: 450px;
+    width: 800px;
 }
 .bigButton{
     padding-top: 2em;
@@ -40,18 +44,29 @@ nav{
 .pre{
     display: flex;
     flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
     margin: auto;
-    border: solid blue 2px;
+    border: solid blue 5px;
+    min-width: 25%;
+    max-width: 50%;
+    width: 90%;
 }
 .main{
     display: flex;
-    flex-direction: row;
-    min-width: 25%;
-    max-width: 50%;
+    flex-direction: column;
+    min-width: 30%;
+    max-width: 60%;
     margin: auto;
-    border: solid red 2px;
+    /* border: solid #2708A0 5px; */
+    justify-content: center;
+    text-align: center;
 }
 .second{
+    display: flex;
+    flex-direction: row;
     border: solid black 2px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 

@@ -13,8 +13,8 @@
         <header>
         <h1>MEME EDIT PAGE</h1></header>
         <form action="/fantasy/<%=bongo.id%>?_method=PUT" method="POST">
-            <img src="<%=bongo.meme%>" class="img-class2"><br/><h3>
-            Meme provided by: <input type="text" name="name" class="blank" value="<%=bongo.name%>"/><br/>
+            <img src="<%=bongo.meme%>" class="img-class2"><br/><h5>
+            Meme provided by: <input type="text" name="name" class="name" value="<%=bongo.name%>"/><br/>
             Update Meme (edit direct link here): <input type="text" name="meme" class="blank" value="<%=bongo.meme%>"/><br/>
             Update Meme explanation: <input type="text" name="explain" class="blank" value="<%=bongo.explain%>"/><br/>
             Check this box if you think your Mother would understand this Meme:
@@ -25,7 +25,7 @@
                     checked
                 <% } %>
                 />       
-            <br/></h3>
+            <br/></h5>
             <input type="submit" class="btn btn-primary" value="SUBMIT CHANGES"><p>
         </form>
         <nav>

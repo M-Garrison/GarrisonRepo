@@ -14,20 +14,20 @@
         <h1>MEME INDEX PAGE</h1>
         <h3>(CLICK ON A MEME FOR MORE DETAILS)</h3>
         </header>
-        <% for(let i=0; i < bingo.length; i++){ %>
-            <div class="pre">
-                <div class="main">
-                    <h3 class="retro">Meme #<%= [i+1]%>:<p></h3>
-                    <a href="/fantasy/<%=bingo[i].id%>">
-                    <img src="<%=bingo[i].meme %>" class="img-class1"></a><p>
-                        <div class="second">
+        <!-- <div class="pre"> -->
+            <% for(let i=0; i < bingo.length; i++){ %>
+            <div class="main">
+                <h3>Meme #<%= [i+1]%>:<p></h3>
+                <a href="/fantasy/<%=bingo[i].id%>">
+                <img src="<%=bingo[i].meme %>" class="img-class1"></a><p> 
+                    <div class="second">
                         <a href="/fantasy/<%=bingo[i].id%>/edit"><button type="button" class="btn btn-primary">EDIT</button></a><p>
                         <form action="/fantasy/<%=bingo[i].id; %>?_method=DELETE" method="POST">
                         <input type="submit" value="DELETE" class="btn btn-primary"/>
                         </form>
-                        </div>  
-                </div>
-            </div>    
+                    </div> 
+            </div>
+        <!-- </div> -->
             <% } %>
             <p>
         <nav>
