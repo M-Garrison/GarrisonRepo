@@ -19,7 +19,7 @@ header{
 .img-class1:hover{
     color: #0B0A07;
     cursor: pointer;
-    box-shadow: 20px 20px #2708A0;
+    box-shadow: 20px 20px #1DA1F2;
 }
 .img-class2{
     min-width: 25%;
@@ -48,16 +48,16 @@ nav{
 }
 .row{
     display: flex;
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    /* border: solid black 2px; */
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: auto;
 }
 .cards{
-    width: 500px;
+    width: 18em;
     margin: auto;
-    border: solid black 2px;
     justify-content: center;
     align-items: center;
 }
@@ -70,9 +70,10 @@ nav{
 .second{
     display: flex;
     flex-direction: row;
-    border: solid black 2px;
+    /* border: solid black 2px; */
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     padding: 5px;
     margin: 5px;
 }
