@@ -1,5 +1,6 @@
 body{
     font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
     background-color: #5AD2F4;
     text-align: center;
     max-width: 80%;
@@ -8,9 +9,11 @@ body{
 header{
     color: #0B0A07;
     background-color: #32E875;
+    justify-content: center;
     text-align: center;
     border: solid black 5px;
-    height: 8em;
+    height: 15%;
+    font-size: 1em;
 }
 .img-class1{
     min-width: 25%;
@@ -29,13 +32,13 @@ nav{
     background-color: #32E875;
     text-align: center;
     border: solid black 5px;
-    height: 8em;
+    height: 15%;
 }
 .name{
-    width: 300px;
+    width: 20em;
 }
 .blank{
-    width: 800px;
+    width: 40em;
 }
 .bigButton{
     padding-top: 2em;
