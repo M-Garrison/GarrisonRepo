@@ -73,7 +73,6 @@ nav{
 .second{
     display: flex;
     flex-direction: row;
-    /* border: solid black 2px; */
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
