@@ -41,26 +41,31 @@ nav{
     padding-top: 2em;
     width: 250px;
 }
-.pre{
+.container{
+    display: flex;
+    border: solid black 2px;
+    flex-wrap: wrap;
+}
+.row{
     display: flex;
     flex-direction: row;
-    flex-flow: wrap;
-    justify-content: center;
-    margin: auto;
-    border: solid blue 5px;
-    min-width: 25%;
-    max-width: 50%;
-    width: 90%;
+    flex-wrap: wrap;
+    /* border: solid black 2px; */
+    align-items: center;
+    justify-content: space-between;
 }
-.main{
-    display: flex;
-    flex-direction: column;
-    min-width: 30%;
-    max-width: 60%;
+.cards{
+    width: 500px;
     margin: auto;
-    /* border: solid #2708A0 5px; */
+    border: solid black 2px;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+}
+.card-title{
+    width: 100%;
+}
+.card-img img{
+    width: 100%;
 }
 .second{
     display: flex;
@@ -68,5 +73,11 @@ nav{
     border: solid black 2px;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 5px;
+    margin: 5px;
 }
-
+.checkmark {
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
