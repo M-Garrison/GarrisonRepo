@@ -15,18 +15,14 @@ header{
     height: 15%;
     font-size: 1em;
 }
-.img-class1{
-    min-width: 25%;
+.img-class{
+    min-width: 30%;
     max-width: 50%;
 }
-.img-class1:hover{
+.img-class:hover{
     color: #0B0A07;
     cursor: pointer;
     box-shadow: 20px 20px #1DA1F2;
-}
-.img-class2{
-    min-width: 25%;
-    max-width: 50%;
 }
 nav{
     background-color: #32E875;
@@ -59,7 +55,7 @@ nav{
     margin: auto;
 }
 .cards{
-    width: 18em;
+    width: 24em;
     margin: auto;
     justify-content: center;
     align-items: center;
